@@ -6,7 +6,7 @@ using System.Collections;
 
 public class FirstPersonController : MonoBehaviour {
 
-	public float movementSpeed = 2.0f;
+	public float movementSpeed = 5.0f;
 	public float mouseSensitivity = 2.0f;
 
 	float verticalRotation = 0f;
@@ -15,12 +15,12 @@ public class FirstPersonController : MonoBehaviour {
 	CharacterController cc;
 	float verticalVelocity = 0f;
 
-	public float jumpSpeed = 7.0f;
+	public float jumpSpeed = 15.0f;
 
 
 	// Use this for initialization
 	void Start () {
-		Cursor.visible = false;
+		//Cursor.visible = false;
 		cc = GetComponent<CharacterController> ();
 
 	}
